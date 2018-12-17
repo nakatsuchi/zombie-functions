@@ -1,0 +1,17 @@
+{
+  "name": "zombie-functions",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "debug": "npm run build && node index.js",
+    "clean": "rm -f *.js lambda.zip",
+    "package": "npm run clean && npm run build && zip -r lambda.zip ."
+  },
+  "dependencies": {
+    "@types/aws-sdk": "^2.7.0",
+    "@types/node": "^10.12.15",
+    "@types/uuid": "^3.4.4",
+    "aws-sdk": "^2.377.0",
+    "uuid": "^3.3.2"
+  }
+}
