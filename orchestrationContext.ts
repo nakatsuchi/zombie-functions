@@ -127,6 +127,9 @@ export class OrchestrationContext {
             activityName: h.activityName,
             completion: new CompletablePromise<unknown>()
           };
+          break;
+        case HistoryEventType.ActivityStarted:
+
       }
     }
   }
